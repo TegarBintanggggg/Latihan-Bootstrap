@@ -83,32 +83,65 @@
 <section class="container my-5">
   <h3 class="text-center mb-4">Jurusan</h3>
 
-  <div class="card-group">
-    <div class="card">
-      <img src="https://picsum.photos/400/200?1" class="card-img-top" alt="Jurusan RPL">
-      <div class="card-body">
-        <h5 class="card-title">RPL</h5>
-        <p class="card-text">Rekayasa Perangkat Lunak</p>
+  <div class="row g-4">
+    <!-- RPL -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://picsum.photos/400/200?1" class="card-img-top" alt="Jurusan RPL">
+        <div class="card-body">
+          <h5 class="card-title">PPLG</h5>
+          <p class="card-text">Pengembangan Perangkat Lunak & Gim. Fokus pada koding web, dan mobile apps</p>
+        </div>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://picsum.photos/400/200?2" class="card-img-top" alt="Jurusan TKJ">
-      <div class="card-body">
-        <h5 class="card-title">TKJ</h5>
-        <p class="card-text">Teknik Komputer dan Jaringan</p>
+    <!-- TKJ -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://picsum.photos/400/200?2" class="card-img-top" alt="Jurusan TKJ">
+        <div class="card-body">
+          <h5 class="card-title">TKJ</h5>
+          <p class="card-text">Teknik Komputer dan Jaringan. Ahli dalam infrastruktur server dan jaringan</p>
+        </div>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://picsum.photos/400/200?3" class="card-img-top" alt="Jurusan DKV">
-      <div class="card-body">
-        <h5 class="card-title">DKV</h5>
-        <p class="card-text">Desain Komunikasi Visual</p>
+    <!-- DKV -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="https://picsum.photos/400/200?3" class="card-img-top" alt="Jurusan DKV">
+        <div class="card-body">
+          <h5 class="card-title">Kuliner</h5>
+          <p class="card-text">Seni Kuliner & Tata Boga.Menciptakan tenaga profesional di bidang hospitaly dan restoran</p>
+        </div>
       </div>
     </div>
+
+    <!-- AKL -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="https://picsum.photos/400/200?4" class="card-img-top" alt="Jurusan AKL">
+        <div class="card-body">
+          <h5 class="card-title">Busana</h5>
+          <p class="card-text">Desain dan produksi busana. fokus pada kreativitas fashion dan teknik menjahit</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OTKP -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="https://picsum.photos/400/200?5" class="card-img-top" alt="Jurusan OTKP">
+        <div class="card-body">
+          <h5 class="card-title">Otomotif</h5>
+          <p class="card-text">Teknik kendaraan ringan. Mempelajari mesin, kelistrikan mobil, dan manajemen bengkel</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
+
 
 <!-- ================= RESPONSIVE GRID ================= -->
 <section class="container my-5">
@@ -134,10 +167,11 @@
 <section id="tabel" class="container my-5">
   <h3 class="text-center mb-4">Tabel Data Siswa</h3>
 
-  <table class="table table-bordered table-striped table-hover text-center">
-    <thead class="table-dark">
+  <table class="table table-bordered table-striped table-hover align-middle">
+    <thead class="table-dark text-center">
       <tr>
         <th>No</th>
+        <th>Foto</th>
         <th>Nama</th>
         <th>Kelas</th>
         <th>Status</th>
@@ -145,35 +179,61 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr class="text-center">
         <td>1</td>
-        <td>Andi</td>
+        <td>
+          <img src="https://i.pravatar.cc/40?img=1" 
+               class="rounded-circle" 
+               width="40" height="40" 
+               alt="Andi">
+        </td>
+        <td class="text-start">Andi</td>
         <td>X RPL 1</td>
         <td><span class="badge bg-success">Aktif</span></td>
         <td>
+          <button type="button" class="btn btn-sm btn-warning me-1">Edit</button>
           <button type="button" class="btn btn-sm btn-danger">Hapus</button>
         </td>
       </tr>
-      <tr>
+
+      <tr class="text-center">
         <td>2</td>
-        <td>Budi</td>
+        <td>
+          <img src="https://i.pravatar.cc/40?img=3" 
+               class="rounded-circle" 
+               width="40" height="40" 
+               alt="Budi">
+        </td>
+        <td class="text-start">Budi</td>
         <td>X TKJ 2</td>
         <td><span class="badge bg-warning text-dark">Izin</span></td>
         <td>
+          <button type="button" class="btn btn-sm btn-warning me-1">Edit</button>
           <button type="button" class="btn btn-sm btn-danger">Hapus</button>
         </td>
       </tr>
-      <tr>
+
+      <tr class="text-center">
         <td>3</td>
-        <td>Siti</td>
+        <td>
+          <img src="https://i.pravatar.cc/40?img=2" 
+               class="rounded-circle" 
+               width="40" height="40" 
+               alt="Siti">
+        </td>
+        <td class="text-start">Siti</td>
         <td>X DKV 1</td>
         <td><span class="badge bg-danger">Tidak Hadir</span></td>
         <td>
+          <button type="button" class="btn btn-sm btn-warning me-1">Edit</button>
           <button type="button" class="btn btn-sm btn-danger">Hapus</button>
         </td>
       </tr>
     </tbody>
   </table>
+</section>
+
+
 
   <!-- PAGINATION -->
   <nav aria-label="Page navigation">
